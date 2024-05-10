@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Accessibility Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-4">
+        <h1 class="dashboard-header">Event Accessibility Dashboard</h1>
+        <div class="controls d-flex justify-content-center mb-4">
+            <input type="text" id="search-box" class="form-control mr-2" placeholder="Search events..." aria-label="Search">
+            <select id="compliance-filter" class="form-control mr-2">
+                <option value="">All Compliance Levels</option>
+                <option value="Required">Required</option>
+                <option value="Best Practice">Best Practice</option>
+                <option value="Industry Leading">Industry Leading</option>
+            </select>
+            <select id="event-type-filter" class="form-control mr-2">
+                <option value="">All Event Types</option>
+                <option value="In-Person">In-Person</option>
+                <option value="Virtual">Virtual</option>
+                <option value="In-Person/Hybrid">In-Person/Hybrid</option>
+            </select>
+            <button type="button" class="button">Apply Filters</button>
+        </div>
+        <div id="dashboard" class="dashboard"></div>
+        <div class="coming-soon">
+            <h2>Resources Coming Soon!</h2>
+            <p>Stay tuned for more updates.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
