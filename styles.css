@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('/fonts/Axiforma-Regular.woff2') format('woff2'),
+         url('/fonts/Axiforma-Regular.woff') format('woff'),
+         url('/fonts/Axiforma-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-pink: #FA12E7;
+    --color-purple: #7622FA;
+    --color-light-blue: #40DDFF;
+    --color-blue: #1F7CFF;
+    --color-gradient-primary: linear-gradient(83deg, rgba(64, 221, 255, 1) -5%, rgba(118, 34, 250, 1) 51%, rgba(250, 18, 227, 1) 125%);
+    --color-white: #FFFFFF;
+    --color-gray: #f1f3f5;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: 'Axiforma', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    background: var(--color-gradient-primary);
+    color: var(--color-white);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.filter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid var(--color-light-blue);
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--color-gradient-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.category-header {
+    background: var(--color-blue);
+    color: var(--color-white);
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+}
+
+.category-header:hover {
+    background: var(--color-purple);
+}
+
+.category-content {
+    padding: 15px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-blue);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.compliance-level {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 120px;
+    text-align: center;
+}
+
+.required {
+    background-color: #ff6b6b;
+    color: var(--color-white);
+}
+
+.best-practice {
+    background-color: #51cf66;
+    color: var(--color-white);
+}
+
+.industry-leading {
+    background-color: #fcc419;
+    color: var(--color-white);
+}
+
+.event-type {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.in-person {
+    background-color: #4dabf7;
+    color: var(--color-white);
+}
+
+.virtual {
+    background-color: #9775fa;
+    color: var(--color-white);
+}
+
+.in-person-hybrid {
+    background-color: #ffa94d;
+    color: var(--color-white);
+}
+
+.item-description {
+    margin-bottom: 10px;
+}
+
+.item-details {
+    padding: 10px;
+    background-color: var(--color-gray);
+    border-radius: 4px;
+    color: #333;
+}
+
+.item-detail {
+    margin-bottom: 5px;
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.coming-soon h2 {
+    color: var(--color-blue);
+    font-size: 28px;
+}
+
+.coming-soon p {
+    color: #6c757d;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+    }
+
+    .form-control {
+        max-width: 100%;
+    }
+}
