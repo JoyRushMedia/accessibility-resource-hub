@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,26 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Accessibility Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Axiforma';
+            src: url('/fonts/Axiforma-Regular.woff2') format('woff2'),
+                 url('/fonts/Axiforma-Regular.woff') format('woff'),
+                 url('/fonts/Axiforma-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        :root {
+            --color-pink: #FA12E7;
+            --color-purple: #7622FA;
+            --color-light-blue: #40DDFF;
+            --color-blue: #1F7CFF;
+            --color-gradient-primary: linear-gradient(83deg, rgba(64, 221, 255, 1) -5%, rgba(118, 34, 250, 1) 51%, rgba(250, 18, 227, 1) 125%);
+            --color-white: #FFFFFF;
+            --color-gray: #f1f3f5;
+        }
+
+        body {
+            background-color: var(--color-white);
+            font-family: 'Axiforma', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            background: var(--color-gradient-primary);
+            color: var(--color-white);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* More styles */
+    </style>
 </head>
 <body>
-    <!-- Content of your HTML -->
-    <input type="text" id="search-box" placeholder="Search...">
-    <select id="compliance-filter">
-        <option value="">Select Compliance Level</option>
-        <option value="Required">Required</option>
-        <option value="Best Practice">Best Practice</option>
-        <option value="Industry Leading">Industry Leading</option>
-    </select>
-    <select id="event-type-filter">
-        <option value="">Select Event Type</option>
-        <option value="In-Person">In-Person</option>
-        <option value="Virtual">Virtual</option>
-        <option value="In-Person/Hybrid">In-Person/Hybrid</option>
-    </select>
-    <div id="dashboard"></div>
+    <div class="container">
+        <header class="dashboard-header">Event Accessibility Dashboard</header>
+        <div class="filter-form">
+            <input type="text" id="search-box" class="form-control" placeholder="Search...">
+            <select id="compliance-filter" class="form-control">
+                <option value="">Select Compliance Level</option>
+                <option value="Required">Required</option>
+                <option value="Best Practice">Best Practice</option>
+                <option value="Industry Leading">Industry Leading</option>
+            </select>
+            <select id="event-type-filter" class="form-control">
+                <option value="">Select Event Type</option>
+                <option value="In-Person">In-Person</option>
+                <option value="Virtual">Virtual</option>
+                <option value="In-Person/Hybrid">In-Person/Hybrid</option>
+            </select>
+        </div>
+        <div id="dashboard"></div>
+    </div>
 
-    <!-- Script Tags -->
     <script src="data.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
+
