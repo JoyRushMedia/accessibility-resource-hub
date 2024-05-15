@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# User directories
+/Application Data/
+/Cookies/
+/Local Settings/
+/My Documents/
+/NetHood/
+/PrintHood/
+/Recent/
+/SendTo/
+/Start Menu/
+/Templates/
+/AppData/
+/Contacts/
+/Creative Cloud Files/
+/Documents/
+/Downloads/
+/Favorites/
+/IntelGraphicsProfiles/
+/Links/
+/Music/
+/NTUSER.DAT*
+/OneDrive/
+/Pictures/
+/Saved Games/
+/Searches/
+/Videos/

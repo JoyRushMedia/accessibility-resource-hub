@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laws - Accessibility Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <nav class="main-menu">
+            <h1>Accessibility Hub</h1>
+            <ul>
+                <li class="nav-item"><a href="index.html"><i class="fa fa-house nav-icon"></i><span class="nav-text">Home</span></a></li>
+                <li class="nav-item active"><a href="laws.html"><i class="fa fa-balance-scale nav-icon"></i><span class="nav-text">Laws</span></a></li>
+                <li class="nav-item"><a href="guidelines.html"><i class="fa fa-file-alt nav-icon"></i><span class="nav-text">Guidelines</span></a></li>
+                <li class="nav-item"><a href="checklists.html"><i class="fa fa-check-square nav-icon"></i><span class="nav-text">Checklists</span></a></li>
+                <li class="nav-item"><a href="policies.html"><i class="fa fa-gavel nav-icon"></i><span class="nav-text">Policies</span></a></li>
+                <li class="nav-item"><a href="resources.html"><i class="fa fa-link nav-icon"></i><span class="nav-text">Resources</span></a></li>
+                <li class="nav-item"><a href="community.html"><i class="fa fa-users nav-icon"></i><span class="nav-text">Community</span></a></li>
+                <li class="nav-item"><a href="about.html"><i class="fa fa-info-circle nav-icon"></i><span class="nav-text">About</span></a></li>
+                <li class="nav-item"><a href="contact.html"><i class="fa fa-envelope nav-icon"></i><span class="nav-text">Contact</span></a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <div class="left-content">
+                <div class="laws-section">
+                    <div class="search-section">
+                        <input type="text" id="search-laws" placeholder="Search laws..." onkeyup="searchLaws()">
+                    </div>
+                    <div class="filters">
+                        <select id="region-filter" onchange="filterLaws()">
+                            <option value="">All Regions</option>
+                            <option value="US">United States</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Global">Global</option>
+                        </select>
+                    </div>
+                    <div class="laws-list" id="laws-list">
+                        <!-- Placeholder for laws content -->
+                        <div class="law">
+                            <div class="law-header" onclick="toggleDetails(this)">
+                                <img src="https://flagcdn.com/us.svg" alt="USA Flag" class="law-flag">
+                                <h3>United States</h3>
+                            </div>
+                            <div class="law-details">
+                                <p>Americans with Disabilities Act (ADA)</p>
+                            </div>
+                        </div>
+                        <div class="law">
+                            <div class="law-header" onclick="toggleDetails(this)">
+                                <img src="https://flagcdn.com/it.svg" alt="Italy Flag" class="law-flag">
+                                <h3>Italy</h3>
+                            </div>
+                            <div class="law-details">
+                                <p>Disability Act (Law 68/1999)</p>
+                            </div>
+                        </div>
+                        <div class="law">
+                            <div class="law-header" onclick="toggleDetails(this)">
+                                <img src="https://flagcdn.com/jp.svg" alt="Japan Flag" class="law-flag">
+                                <h3>Japan</h3>
+                            </div>
+                            <div class="law-details">
+                                <p>Basic Act for Persons with Disabilities</p>
+                            </div>
+                        </div>
+                        <div class="law">
+                            <div class="law-header" onclick="toggleDetails(this)">
+                                <img src="https://flagcdn.com/br.svg" alt="Brazil Flag" class="law-flag">
+                                <h3>Brazil</h3>
+                            </div>
+                            <div class="law-details">
+                                <p>Brazilian Inclusion Law (Statute of the Person with Disabilities)</p>
+                            </div>
+                        </div>
+                        <div class="law">
+                            <div class="law-header" onclick="toggleDetails(this)">
+                                <img src="https://flagcdn.com/de.svg" alt="Germany Flag" class="law-flag">
+                                <h3>Germany</h3>
+                            </div>
+                            <div class="law-details">
+                                <p>Federal Disability Equality Act (BGG)</p>
+                            </div>
+                        </div>
+                        <!-- Add more law entries here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
